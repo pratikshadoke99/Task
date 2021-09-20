@@ -1,0 +1,14 @@
+use practice;
+create table data(no int,name varchar(20));
+insert into data values(123456789,'pratiksha');
+insert into data values(234567890,'pranita');
+insert into data values(345678901,'komal');
+insert into data values(456789012,'pooja');
+insert into data values(567890123,'amruta');
+insert into data values(678901234,'rakhi');
+insert into data values(789012345,'mayuri');
+select *from data;
+drop table data;
+select *from data where name like '_%an%_' ;
+create or replace view v2 as select no,name from data where name='pooja';
+select *from v2;
